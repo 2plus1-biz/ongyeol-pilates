@@ -167,9 +167,10 @@ export const InstructorsPage: React.FC<InstructorsPageProps> = ({ onNavigate }) 
             <div>
               <div className="w-44 h-44 mx-auto rounded-full overflow-hidden mb-6 border-4 border-[#FAF8F4] shadow-md">
                 <img
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1X9cJe6Y48Mkvz32ROC0o890gpTl4ssMGMm7nXBykDaommj97oJtt1rm3A15TX-DrFtBTHEkkYMtWiaBdFeQHn8cTn9bhqdJxcfGEDRkdpxxoo5sHqDGpwC4Orml3p9gU7Sm74iRA9ZrU1K2MDQnHBtgB98KNmb1lbq20_L9u2XXtDiXFdLTO-pGd1Vef4qpTuc1czIWNjsBKlObhQzxpFKPqBlnQhEc1XC0JQPoOvfPqtyUJfY_0q4bqM"
-                  alt="윤도현 전임강사"
+                  src="/src/assets/images/female_instructor_portrait_1791542767830.jpg"
+                  alt="강하연 전임강사"
                   className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="text-center mb-6">
@@ -177,7 +178,7 @@ export const InstructorsPage: React.FC<InstructorsPageProps> = ({ onNavigate }) 
                   전임강사
                 </span>
                 <h3 className="text-[22px] lg:text-[24px] font-semibold text-[#715C45] mb-1">
-                  윤도현 강사
+                  강하연 강사
                 </h3>
                 <p className="text-[15px] text-[#8C7760] font-normal">기능성 운동처방 & 컨디셔닝</p>
               </div>
@@ -208,10 +209,10 @@ export const InstructorsPage: React.FC<InstructorsPageProps> = ({ onNavigate }) 
                 </p>
               </div>
               <button
-                onClick={() => onNavigate('reservation', '윤도현 강사 1:1 상담 희망')}
+                onClick={() => onNavigate('reservation', '강하연 강사 1:1 상담 희망')}
                 className="block w-full py-3.5 text-center rounded-xl bg-[#6A684B] hover:bg-[#55533A] text-white text-[15px] font-medium transition-colors cursor-pointer shadow-sm"
               >
-                윤도현 강사 1:1 상담 신청
+                강하연 강사 1:1 상담 신청
               </button>
             </div>
           </div>
