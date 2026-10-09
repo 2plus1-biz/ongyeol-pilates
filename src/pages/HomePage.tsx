@@ -18,8 +18,7 @@ interface JournalTip {
 const journalTips: JournalTip[] = [
   {
     id: 'tip1',
-    image:
-      'https://lh3.googleusercontent.com/aida/AEtjO1Wp-7pkg1khTYinK7wYJ4VSd0ReaUk_YIkD9ENBKK7CqtMq5cJ1RoDJI0GjinVD_VnRI8fnlAqYjEf0fzeWh6S35StmRiOx8rfig3wY5c_VDIbj9mErXdoJY6fvdInL-T_dSZUIupzaxDUxrnWm59MxzbAb6xohzHl79C3Ln6-PPma5a4Ni9vhg9VouLZNC5B-WBqHF6NTeDlu20StMTWrCxdJzKsheRAkHDBRWJ1y2HKlABaX79tUJbQ',
+    image: '/src/assets/images/neck_stretch_routine_1791542356910.jpg',
     title: '직장인 거북목 스트레칭',
     summary:
       '모니터에 쏠린 목과 굳은 승모근을 3분 만에 개운하게 이완하고, 흉곽 호흡으로 맑은 머리를 되찾는 턱 당기기 루틴입니다.',
@@ -33,8 +32,7 @@ const journalTips: JournalTip[] = [
   },
   {
     id: 'tip2',
-    image:
-      'https://lh3.googleusercontent.com/aida/AEtjO1X9cJe6Y48Mkvz32ROC0o890gpTl4ssMGMm7nXBykDaommj97oJtt1rm3A15TX-DrFtBTHEkkYMtWiaBdFeQHn8cTn9bhqdJxcfGEDRkdpxxoo5sHqDGpwC4Orml3p9gU7Sm74iRA9ZrU1K2MDQnHBtgB98KNmb1lbq20_L9u2XXtDiXFdLTO-pGd1Vef4qpTuc1czIWNjsBKlObhQzxpFKPqBlnQhEc1XC0JQPoOvfPqtyUJfY_0q4bqM',
+    image: '/src/assets/images/postpartum_core_breathing_1791542370434.jpg',
     title: '출산 후 코어 회복 첫걸음',
     summary:
       '무리한 윗몸일으키기 대신 골반기저근과 복횡근을 부드럽게 깨워 허리 통증을 줄이고 탄력을 되찾는 산후 안심 호흡법입니다.',
@@ -48,8 +46,7 @@ const journalTips: JournalTip[] = [
   },
   {
     id: 'tip3',
-    image:
-      'https://lh3.googleusercontent.com/aida/AEtjO1UF7g2e47o-HiHd_XXWsDwsKwLZaYw82dY85jqH34kulCTuVY2osR8xCOJiODfG3SWmCKlU6WAUX0cj0iHhItdMhOwlvzHpT-WAY7tRdcRjeXdG2snSUgdNfkidkSSG7Q6MTT4a0lGO9eW5YiHE58S5zrMWz8JJxUCctRWkNrZ5nBHigXlR8Fpl9Rzngnpz5_hXYPQEZP3NFjjdPIdmVA_4su3SfxIC_sVIhSEISKKW0ezCG_GOhaZVlWU',
+    image: '/src/assets/images/neutral_sitting_posture_1791542381462.jpg',
     title: '허리 부담 줄이는 앉는 법',
     summary:
       '좌골로 바닥을 지지하고 척추 중립을 유지하여 장시간 앉아 있어도 요추 피로와 다리 부종을 최소화하는 바른 착석 가이드입니다.',
@@ -580,6 +577,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                       src={tip.image}
                       alt={tip.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
                     />
                   </div>
                   <div className="p-7">
