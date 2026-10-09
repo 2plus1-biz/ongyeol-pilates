@@ -94,8 +94,8 @@ export const InstructorsPage: React.FC<InstructorsPageProps> = ({ onNavigate }) 
             </div>
 
             <div>
-              <div className="p-4 rounded-2xl bg-[#FAF8F4] border border-[#D2B49A]/30 mb-6 text-center">
-                <p className="text-[14px] lg:text-[15px] text-[#715C45] leading-[1.7] font-normal">
+              <div className="p-4 rounded-2xl bg-[#FAF8F4] border border-[#D2B49A]/30 mb-6 text-center min-h-[108px] flex items-center justify-center">
+                <p className="text-[14px] lg:text-[15px] text-[#715C45] leading-[1.7] font-normal w-full">
                   "몸이 보내는 신호를 섬세하게 관찰하고, 일상 속 잊혀졌던 깊은 활력과 바른 호흡을 되찾아 드리겠습니다."
                 </p>
               </div>
@@ -148,8 +148,8 @@ export const InstructorsPage: React.FC<InstructorsPageProps> = ({ onNavigate }) 
             </div>
 
             <div>
-              <div className="p-4 rounded-2xl bg-[#FAF8F4] border border-[#D2B49A]/30 mb-6 text-center">
-                <p className="text-[14px] lg:text-[15px] text-[#715C45] leading-[1.7] font-normal">
+              <div className="p-4 rounded-2xl bg-[#FAF8F4] border border-[#D2B49A]/30 mb-6 text-center min-h-[108px] flex items-center justify-center">
+                <p className="text-[14px] lg:text-[15px] text-[#715C45] leading-[1.7] font-normal w-full">
                   "정확한 호흡과 움직임 속에서 발견하는 당당하고 온전한 자신감을 끝까지 함께 만들어 가겠습니다."
                 </p>
               </div>
@@ -203,8 +203,8 @@ export const InstructorsPage: React.FC<InstructorsPageProps> = ({ onNavigate }) 
             </div>
 
             <div>
-              <div className="p-4 rounded-2xl bg-[#FAF8F4] border border-[#D2B49A]/30 mb-6 text-center">
-                <p className="text-[14px] lg:text-[15px] text-[#715C45] leading-[1.7] font-normal">
+              <div className="p-4 rounded-2xl bg-[#FAF8F4] border border-[#D2B49A]/30 mb-6 text-center min-h-[108px] flex items-center justify-center">
+                <p className="text-[14px] lg:text-[15px] text-[#715C45] leading-[1.7] font-normal w-full">
                   "일상의 뻐근한 피로감을 걷어내고, 관절마다 가장 편안하고 자연스러운 움직임을 선물해 드리겠습니다."
                 </p>
               </div>
