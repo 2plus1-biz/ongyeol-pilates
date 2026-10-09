@@ -1,0 +1,8 @@
+{
+  "name": "온결 필라테스",
+  "description": "몸의 결을 바르게, 일상에 온기를. 프라이빗 부티크 온결 필라테스 공식 웹사이트",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

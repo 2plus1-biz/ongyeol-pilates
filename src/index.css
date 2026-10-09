@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  --color-ong-bg: #FAF8F4;
+  --color-ong-card: #FFFFFF;
+  --color-ong-beige: #D2B49A;
+  --color-ong-terracotta: #A36E47;
+  --color-ong-olive: #6A684B;
+  --color-ong-olive-dark: #55533A;
+  --color-ong-brown: #715C45;
+  --color-ong-brown-light: #8C7760;
+}
+
+* {
+  word-break: keep-all;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+/* 한글 기울임체(italic) 금지 */
+em, i, cite, .italic {
+  font-style: normal !important;
+}
+
+body {
+  background-color: #FAF8F4;
+  color: #715C45;
+  line-height: 1.7;
+}
