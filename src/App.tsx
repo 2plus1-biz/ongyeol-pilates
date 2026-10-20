@@ -85,7 +85,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF8F4] text-[#715C45] overflow-x-hidden antialiased">
+    <div className="min-h-screen flex flex-col bg-[#FAF8F4] text-[#715C45] overflow-x-clip antialiased">
       {/* Header */}
       <Header currentPage={currentPage} onNavigate={handleNavigate} />
 

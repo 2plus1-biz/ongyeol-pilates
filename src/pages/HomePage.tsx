@@ -267,7 +267,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             첫 방문은 이렇게 진행돼요
           </h2>
           <p className="text-[16px] lg:text-[17px] text-[#8C7760] max-w-2xl mx-auto mb-16 leading-[1.7] font-normal">
-            필라테스가 처음이셔도 부담 없이 편안하게 시작하실 수 있도록, 온결의 첫 만남은 섬세한 경청과 전문 체형 분석으로 출발합니다.
+            필라테스가 처음이셔도 부담 없이 편안하게 시작하실 수 있도록,<br />
+            온결의 첫 만남은 섬세한 경청과 전문 체형 분석으로 출발합니다.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
