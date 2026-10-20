@@ -37,3 +37,60 @@ body {
   color: #715C45;
   line-height: 1.7;
 }
+
+/* ===== Page entrance reveal (set by src/hooks/usePageReveal.ts) =====
+   Only elements tagged by JS are affected; without JS everything is visible. */
+:root {
+  --reveal-distance: 16px;
+  --reveal-duration: 0.62s;
+  --reveal-step: 70ms;
+  --reveal-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@media (max-width: 767px) {
+  :root {
+    --reveal-distance: 10px;
+    --reveal-duration: 0.55s;
+    --reveal-step: 45ms;
+  }
+}
+
+@keyframes ong-reveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, var(--reveal-distance), 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+[data-reveal='pending'] {
+  opacity: 0;
+  transform: translate3d(0, var(--reveal-distance), 0);
+}
+
+[data-reveal='in'] {
+  animation: ong-reveal var(--reveal-duration) var(--reveal-ease) both;
+}
+
+[data-reveal='in'][data-reveal-step='1'] { animation-delay: calc(var(--reveal-step) * 1); }
+[data-reveal='in'][data-reveal-step='2'] { animation-delay: calc(var(--reveal-step) * 2); }
+[data-reveal='in'][data-reveal-step='3'] { animation-delay: calc(var(--reveal-step) * 3); }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
+
+@media print {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}

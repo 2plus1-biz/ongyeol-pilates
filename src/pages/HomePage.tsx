@@ -18,7 +18,7 @@ interface JournalTip {
 const journalTips: JournalTip[] = [
   {
     id: 'tip1',
-    image: '/src/assets/images/neck_stretch_routine_1791542356910.jpg',
+    image: '/images/journal/journal-neck-stretch.jpg',
     title: '직장인 거북목 스트레칭',
     summary:
       '모니터에 쏠린 목과 굳은 승모근을 3분 만에 개운하게 이완하고, 흉곽 호흡으로 맑은 머리를 되찾는 턱 당기기 루틴입니다.',
@@ -32,7 +32,7 @@ const journalTips: JournalTip[] = [
   },
   {
     id: 'tip2',
-    image: '/src/assets/images/postpartum_core_breathing_1791542370434.jpg',
+    image: '/images/journal/journal-core-breathing.jpg',
     title: '출산 후 코어 회복 첫걸음',
     summary:
       '무리한 윗몸일으키기 대신 골반기저근과 복횡근을 부드럽게 깨워 허리 통증을 줄이고 탄력을 되찾는 산후 안심 호흡법입니다.',
@@ -46,7 +46,7 @@ const journalTips: JournalTip[] = [
   },
   {
     id: 'tip3',
-    image: '/src/assets/images/neutral_sitting_posture_1791542381462.jpg',
+    image: '/images/journal/journal-neutral-sitting.jpg',
     title: '허리 부담 줄이는 앉는 법',
     summary:
       '좌골로 바닥을 지지하고 척추 중립을 유지하여 장시간 앉아 있어도 요추 피로와 다리 부종을 최소화하는 바른 착석 가이드입니다.',
@@ -62,32 +62,32 @@ const journalTips: JournalTip[] = [
 
 const instagramPhotos = [
   {
-    url: 'https://lh3.googleusercontent.com/aida/AEtjO1Wp-7pkg1khTYinK7wYJ4VSd0ReaUk_YIkD9ENBKK7CqtMq5cJ1RoDJI0GjinVD_VnRI8fnlAqYjEf0fzeWh6S35StmRiOx8rfig3wY5c_VDIbj9mErXdoJY6fvdInL-T_dSZUIupzaxDUxrnWm59MxzbAb6xohzHl79C3Ln6-PPma5a4Ni9vhg9VouLZNC5B-WBqHF6NTeDlu20StMTWrCxdJzKsheRAkHDBRWJ1y2HKlABaX79tUJbQ',
+    url: '/images/restored/balance-reformer.jpg',
     alt: '온결 필라테스 리포머 세션',
     caption: '몸의 결을 바르게 다듬는 리포머 세션',
   },
   {
-    url: 'https://lh3.googleusercontent.com/aida/AEtjO1XNRSU9O4Vm11Bw2pTZ9uEuiBt42NRJZLOPNql2JYEwS_3vh33472W7B_rOXvbzukMIHJaepK9Z7XLhFCNUsrDMCM-H2MU4vpejihLxZcuJz_TwD8UdWhw_NHrt4L386cby4yrbQnFrvHWrLHdoKUbpKd6Iu0xqU3MCRkkPB4MlFDdeLO5ri05QNhbTO4kt_vXj3nUGpjDCWHE6Yg8OuJZpNFJdT0eRpWJ0KOO8jO5mNomXAcnx4g9KfQ',
+    url: '/images/private_pilates_suite_1791541277206.jpg',
     alt: '1:1 프라이빗 스위트 룸',
     caption: '따뜻한 자연광이 머무는 프라이빗 룸',
   },
   {
-    url: 'https://lh3.googleusercontent.com/aida/AEtjO1UF7g2e47o-HiHd_XXWsDwsKwLZaYw82dY85jqH34kulCTuVY2osR8xCOJiODfG3SWmCKlU6WAUX0cj0iHhItdMhOwlvzHpT-WAY7tRdcRjeXdG2snSUgdNfkidkSSG7Q6MTT4a0lGO9eW5YiHE58S5zrMWz8JJxUCctRWkNrZ5nBHigXlR8Fpl9Rzngnpz5_hXYPQEZP3NFjjdPIdmVA_4su3SfxIC_sVIhSEISKKW0ezCG_GOhaZVlWU',
+    url: '/images/restored/duet-studio.jpg',
     alt: '2:1 듀엣 스튜디오 전경',
     caption: '함께 호흡하며 활력을 채우는 듀엣 룸',
   },
   {
-    url: 'https://lh3.googleusercontent.com/aida/AEtjO1UnFskMvqBvwGskM1lJHh-pEiDTCLHH29PLwJTewYtNG4ndVlOAs2uVtqPeTPg1kQ2oA4BWwrY6X2NmeSKn8wJ6uGgT86oDMxe45HQZ6-rrDslp6u7beZWkJQJqyZ99sz9pL1843kjkA5f_obsBjzASzRAPYe3axN3RH0VGpGpLl5qEBVvXKv4KsQzZyBU_0YfBI9hXU24osCDPKYRLmX-Lk9mPsesyswucWGvoXu2fIfLbiZbrylUmUw',
+    url: '/images/vanity_powder_room_1791541288839.jpg',
     alt: '호텔식 파우더 & 어메니티',
     caption: '운동 후 온전한 쉼을 위한 파우더 공간',
   },
   {
-    url: 'https://lh3.googleusercontent.com/aida/AEtjO1U7acBOP8VLMQ29i4pa6NmrArTOMt2_8iz9QZkF49dryYsS14Fl5j-nTw58QgIf0egH-2duiIl-Z81-J5L5mEv2CEfI3tJVkEeCNAuJIsJwg8Y95VGjF6hBsT16fsQRf8CIzTeSOhsPrAv4tSKewl-y7lXueMd8cq2-Kg5BKF1_FtHm56ros0Gw_SQ_trHr-IbcMkax15NXDUQEbj6kF5in3M6fr5HKwT3q5zF6FiR3A0NKaddYz4EGYWw',
+    url: '/images/restored/tea-lounge.jpg',
     alt: '웰컴 티 라운지',
     caption: '계절 유기농 티와 함께하는 마인드풀 타임',
   },
   {
-    url: 'https://lh3.googleusercontent.com/aida/AEtjO1X66laqv84N8mCs29NHuwW2Bujmal2Bi2otmyySQWBp4qzZ2D3AbdEdsCm0uA--sJbimoPpva-LfqYa1068XMCEJl0IwGealki6rm8jYIHAyDfJrqbU5HdD6zbtwCBuYBMPdaci67a5_BzsYEUXfDNBLCQLIl9NWs2reXXc97Pge8S82RPZO2s9Fn4nVN_o08c49B_VF5ObfDiyZaAa2X0NFQ0e0CMHUWdhGH9pdYy8_y2YdaYgPoaxHRo',
+    url: '/images/restored/instructor-director.jpg',
     alt: '강사진 1:1 디테일 티칭',
     caption: '섬세한 손길로 전하는 바른 척추 정렬',
   },

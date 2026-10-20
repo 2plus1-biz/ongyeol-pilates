@@ -57,7 +57,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onNavigate }) => {
           <div className="p-8 lg:p-12 rounded-3xl bg-white border border-[#D2B49A]/40 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             <div className="lg:col-span-5 rounded-2xl overflow-hidden aspect-[4/3]">
               <img
-                src="https://lh3.googleusercontent.com/aida/AEtjO1Wp-7pkg1khTYinK7wYJ4VSd0ReaUk_YIkD9ENBKK7CqtMq5cJ1RoDJI0GjinVD_VnRI8fnlAqYjEf0fzeWh6S35StmRiOx8rfig3wY5c_VDIbj9mErXdoJY6fvdInL-T_dSZUIupzaxDUxrnWm59MxzbAb6xohzHl79C3Ln6-PPma5a4Ni9vhg9VouLZNC5B-WBqHF6NTeDlu20StMTWrCxdJzKsheRAkHDBRWJ1y2HKlABaX79tUJbQ"
+                src="/images/restored/balance-reformer.jpg"
                 alt="자세 밸런스 프로그램"
                 className="w-full h-full object-cover"
               />
@@ -116,7 +116,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onNavigate }) => {
             </div>
             <div className="lg:col-span-5 rounded-2xl overflow-hidden aspect-[4/3]">
               <img
-                src="https://lh3.googleusercontent.com/aida/AEtjO1X9cJe6Y48Mkvz32ROC0o890gpTl4ssMGMm7nXBykDaommj97oJtt1rm3A15TX-DrFtBTHEkkYMtWiaBdFeQHn8cTn9bhqdJxcfGEDRkdpxxoo5sHqDGpwC4Orml3p9gU7Sm74iRA9ZrU1K2MDQnHBtgB98KNmb1lbq20_L9u2XXtDiXFdLTO-pGd1Vef4qpTuc1czIWNjsBKlObhQzxpFKPqBlnQhEc1XC0JQPoOvfPqtyUJfY_0q4bqM"
+                src="/images/restored/core-training.jpg"
                 alt="코어 & 라인 프로그램"
                 className="w-full h-full object-cover"
               />
@@ -172,7 +172,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onNavigate }) => {
           <div className="p-8 lg:p-12 rounded-3xl bg-white border border-[#D2B49A]/40 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             <div className="lg:col-span-5 rounded-2xl overflow-hidden aspect-[4/3]">
               <img
-                src="https://lh3.googleusercontent.com/aida/AEtjO1UF7g2e47o-HiHd_XXWsDwsKwLZaYw82dY85jqH34kulCTuVY2osR8xCOJiODfG3SWmCKlU6WAUX0cj0iHhItdMhOwlvzHpT-WAY7tRdcRjeXdG2snSUgdNfkidkSSG7Q6MTT4a0lGO9eW5YiHE58S5zrMWz8JJxUCctRWkNrZ5nBHigXlR8Fpl9Rzngnpz5_hXYPQEZP3NFjjdPIdmVA_4su3SfxIC_sVIhSEISKKW0ezCG_GOhaZVlWU"
+                src="/images/restored/duet-studio.jpg"
                 alt="바디 컨디셔닝 프로그램"
                 className="w-full h-full object-cover"
               />

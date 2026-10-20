@@ -59,7 +59,7 @@ export const InstructorsPage: React.FC<InstructorsPageProps> = ({ onNavigate }) 
             <div>
               <div className="w-44 h-44 mx-auto rounded-full overflow-hidden mb-6 border-4 border-[#FAF8F4] shadow-md">
                 <img
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1X66laqv84N8mCs29NHuwW2Bujmal2Bi2otmyySQWBp4qzZ2D3AbdEdsCm0uA--sJbimoPpva-LfqYa1068XMCEJl0IwGealki6rm8jYIHAyDfJrqbU5HdD6zbtwCBuYBMPdaci67a5_BzsYEUXfDNBLCQLIl9NWs2reXXc97Pge8S82RPZO2s9Fn4nVN_o08c49B_VF5ObfDiyZaAa2X0NFQ0e0CMHUWdhGH9pdYy8_y2YdaYgPoaxHRo"
+                  src="/images/restored/instructor-director.jpg"
                   alt="정온유 대표원장"
                   className="w-full h-full object-cover"
                 />
@@ -113,7 +113,7 @@ export const InstructorsPage: React.FC<InstructorsPageProps> = ({ onNavigate }) 
             <div>
               <div className="w-44 h-44 mx-auto rounded-full overflow-hidden mb-6 border-4 border-[#FAF8F4] shadow-md">
                 <img
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1UuKwI8y8UhX_aT8XpABNzBtr0oE-HFRVsxT_nnF4fChBHe0KW2YwgtgoH3q1Qs2rTeSpEPT7Qi9PxnUCCFRtc_yQUIBNZKJp0eSraF5zE6nsh67_wMJ-wbhqdKdTOIS4X4Bu6AmGfEZ5crll7-vKdTJqU0sxgyoErL9-jZJTWBNvFOxjrCvf6MU_iJqEmKi3S8ZC_B9Niw3Gt0-2aMXGIo5ofzNDfiLq5d9KiqNoLGHUGxnf0Pm7wGepo"
+                  src="/images/restored/instructor-senior.jpg"
                   alt="강서진 수석강사"
                   className="w-full h-full object-cover"
                 />
@@ -167,7 +167,7 @@ export const InstructorsPage: React.FC<InstructorsPageProps> = ({ onNavigate }) 
             <div>
               <div className="w-44 h-44 mx-auto rounded-full overflow-hidden mb-6 border-4 border-[#FAF8F4] shadow-md">
                 <img
-                  src="/src/assets/images/female_instructor_portrait_1791542767830.jpg"
+                  src="/images/female_instructor_portrait_1791542767830.jpg"
                   alt="강하연 전임강사"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

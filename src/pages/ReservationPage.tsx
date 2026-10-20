@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { PageId, ReservationFormData } from '../types';
+import { GoogleMapLocation } from '../components/GoogleMapLocation';
 import { ConsultationCtaBanner } from '../components/ConsultationCtaBanner';
 
 interface ReservationPageProps {
@@ -384,11 +385,7 @@ export const ReservationPage: React.FC<ReservationPageProps> = ({
             {/* Clean Map Illustration */}
             <div className="rounded-3xl overflow-hidden border border-[#D2B49A]/40 shadow-sm bg-white p-4">
               <div className="rounded-2xl overflow-hidden aspect-[4/3]">
-                <img
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1W6MRrKBNYCmREMO4xHmtIzoxCoKfyrMNnZ8rzKIXOIhxdgSC2X8M67flDuDetWtlqhfU6S3VWpPvLG62EIA9Kl1lvht6xtoLjTPiVoyJqkB3AsM_fjWvDzBbEzhd-mVPxeIfknSycpM9GWl6gioiLCbASKOWw7yfjUOSh938B-sTkEPlenoM-2rIQYawpHroVQrSowKWhmtjh6itUkB4nk3jcDrf6gFFeTxfW37M87zbD2Z-_uGXOsNuw"
-                  alt="온결 필라테스 약도"
-                  className="w-full h-full object-cover"
-                />
+                <GoogleMapLocation />
               </div>
               <p className="text-[13px] text-center text-[#8C7760] mt-3.5 font-normal">
                 건물 지하 전용 주차 타워 2시간 무료 지원 및 정문 발렛 가능

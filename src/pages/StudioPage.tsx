@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageId } from '../types';
 import { ConsultationCtaBanner } from '../components/ConsultationCtaBanner';
+import { GoogleMapLocation } from '../components/GoogleMapLocation';
 
 interface StudioPageProps {
   onNavigate: (page: PageId) => void;
@@ -43,7 +44,7 @@ export const StudioPage: React.FC<StudioPageProps> = ({ onNavigate }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="rounded-3xl overflow-hidden shadow-sm border border-[#D2B49A]/40 aspect-[4/3]">
             <img
-              src="https://lh3.googleusercontent.com/aida/AEtjO1XNRSU9O4Vm11Bw2pTZ9uEuiBt42NRJZLOPNql2JYEwS_3vh33472W7B_rOXvbzukMIHJaepK9Z7XLhFCNUsrDMCM-H2MU4vpejihLxZcuJz_TwD8UdWhw_NHrt4L386cby4yrbQnFrvHWrLHdoKUbpKd6Iu0xqU3MCRkkPB4MlFDdeLO5ri05QNhbTO4kt_vXj3nUGpjDCWHE6Yg8OuJZpNFJdT0eRpWJ0KOO8jO5mNomXAcnx4g9KfQ"
+              src="/images/private_pilates_suite_1791541277206.jpg"
               alt="온결 필라테스 스튜디오 전경"
               className="w-full h-full object-cover"
             />
@@ -95,7 +96,7 @@ export const StudioPage: React.FC<StudioPageProps> = ({ onNavigate }) => {
             <div className="p-7 rounded-3xl bg-[#FAF8F4] border border-[#D2B49A]/40 flex flex-col md:flex-row gap-6">
               <div className="w-full md:w-52 h-52 rounded-2xl overflow-hidden shrink-0">
                 <img
-                  src="/src/assets/images/private_pilates_suite_1791541277206.jpg"
+                  src="/images/private_pilates_suite_1791541277206.jpg"
                   alt="1:1 프라이빗 룸"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -123,7 +124,7 @@ export const StudioPage: React.FC<StudioPageProps> = ({ onNavigate }) => {
             <div className="p-7 rounded-3xl bg-[#FAF8F4] border border-[#D2B49A]/40 flex flex-col md:flex-row gap-6">
               <div className="w-full md:w-52 h-52 rounded-2xl overflow-hidden shrink-0">
                 <img
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1UF7g2e47o-HiHd_XXWsDwsKwLZaYw82dY85jqH34kulCTuVY2osR8xCOJiODfG3SWmCKlU6WAUX0cj0iHhItdMhOwlvzHpT-WAY7tRdcRjeXdG2snSUgdNfkidkSSG7Q6MTT4a0lGO9eW5YiHE58S5zrMWz8JJxUCctRWkNrZ5nBHigXlR8Fpl9Rzngnpz5_hXYPQEZP3NFjjdPIdmVA_4su3SfxIC_sVIhSEISKKW0ezCG_GOhaZVlWU"
+                  src="/images/restored/duet-studio.jpg"
                   alt="2:1 듀엣 룸"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -151,7 +152,7 @@ export const StudioPage: React.FC<StudioPageProps> = ({ onNavigate }) => {
             <div className="p-7 rounded-3xl bg-[#FAF8F4] border border-[#D2B49A]/40 flex flex-col md:flex-row gap-6">
               <div className="w-full md:w-52 h-52 rounded-2xl overflow-hidden shrink-0">
                 <img
-                  src="/src/assets/images/vanity_powder_room_1791541288839.jpg"
+                  src="/images/vanity_powder_room_1791541288839.jpg"
                   alt="파우더 & 탈의실"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -179,7 +180,7 @@ export const StudioPage: React.FC<StudioPageProps> = ({ onNavigate }) => {
             <div className="p-7 rounded-3xl bg-[#FAF8F4] border border-[#D2B49A]/40 flex flex-col md:flex-row gap-6">
               <div className="w-full md:w-52 h-52 rounded-2xl overflow-hidden shrink-0">
                 <img
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1U7acBOP8VLMQ29i4pa6NmrArTOMt2_8iz9QZkF49dryYsS14Fl5j-nTw58QgIf0egH-2duiIl-Z81-J5L5mEv2CEfI3tJVkEeCNAuJIsJwg8Y95VGjF6hBsT16fsQRf8CIzTeSOhsPrAv4tSKewl-y7lXueMd8cq2-Kg5BKF1_FtHm56ros0Gw_SQ_trHr-IbcMkax15NXDUQEbj6kF5in3M6fr5HKwT3q5zF6FiR3A0NKaddYz4EGYWw"
+                  src="/images/restored/tea-lounge.jpg"
                   alt="웰컴 티 라운지"
                   className="w-full h-full object-cover"
                 />
@@ -305,12 +306,8 @@ export const StudioPage: React.FC<StudioPageProps> = ({ onNavigate }) => {
                 상세 오시는 길 및 예약 안내 보기
               </button>
             </div>
-            <div className="rounded-2xl overflow-hidden border border-[#D2B49A]/40 shadow-sm aspect-[3/2]">
-              <img
-                src="https://lh3.googleusercontent.com/aida/AEtjO1W6MRrKBNYCmREMO4xHmtIzoxCoKfyrMNnZ8rzKIXOIhxdgSC2X8M67flDuDetWtlqhfU6S3VWpPvLG62EIA9Kl1lvht6xtoLjTPiVoyJqkB3AsM_fjWvDzBbEzhd-mVPxeIfknSycpM9GWl6gioiLCbASKOWw7yfjUOSh938B-sTkEPlenoM-2rIQYawpHroVQrSowKWhmtjh6itUkB4nk3jcDrf6gFFeTxfW37M87zbD2Z-_uGXOsNuw"
-                alt="스튜디오 약도"
-                className="w-full h-full object-cover"
-              />
+            <div className="w-full aspect-[3/2] min-h-[340px]">
+              <GoogleMapLocation />
             </div>
           </div>
         </div>

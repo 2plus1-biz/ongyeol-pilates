@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import { PageId } from './types';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -16,6 +16,7 @@ import { BeforeAfterPage } from './pages/BeforeAfterPage';
 import { SchedulePage } from './pages/SchedulePage';
 import { ReviewsPage } from './pages/ReviewsPage';
 import { ReservationPage } from './pages/ReservationPage';
+import { usePageReveal } from './hooks/usePageReveal';
 
 const validPages: PageId[] = [
   'home',
@@ -40,7 +41,8 @@ export default function App() {
   // Sync hash changes with state
   useEffect(() => {
     const handleHashChange = () => {
-      const hash = window.location.hash.replace('#', '') as PageId;
+      const raw = window.location.hash.replace('#', '');
+      const hash = (raw === '' ? 'home' : raw) as PageId;
       if (validPages.includes(hash)) {
         setCurrentPage(hash);
       }
@@ -48,6 +50,21 @@ export default function App() {
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
+
+  const mainRef = useRef<HTMLElement>(null);
+  const isFirstPageRef = useRef(true);
+
+  // Page change (including hash back/forward): start the new page at the top.
+  // Declared before usePageReveal so the reveal measures from the top.
+  useLayoutEffect(() => {
+    if (isFirstPageRef.current) {
+      isFirstPageRef.current = false;
+      return;
+    }
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' as ScrollBehavior });
+  }, [currentPage]);
+
+  usePageReveal(mainRef, currentPage);
 
   const handleNavigate = (page: PageId, extraParam?: string) => {
     if (page === 'reservation' && extraParam) {
@@ -73,7 +90,7 @@ export default function App() {
       <Header currentPage={currentPage} onNavigate={handleNavigate} />
 
       {/* Main Page Content */}
-      <main className={`flex-1 w-full ${currentPage !== 'reservation' ? 'pb-20 md:pb-0' : ''}`}>
+      <main ref={mainRef} className={`flex-1 w-full ${currentPage !== 'reservation' ? 'pb-20 md:pb-0' : ''}`}>
         {currentPage === 'home' && <HomePage onNavigate={handleNavigate} />}
         {currentPage === 'studio' && <StudioPage onNavigate={handleNavigate} />}
         {currentPage === 'programs' && <ProgramsPage onNavigate={handleNavigate} />}
